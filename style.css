@@ -1,0 +1,80 @@
+* {
+    box-sizing: border-box; 
+    margin: 0;
+    padding: 0;
+}
+/* управлят задний фон */
+body {
+    background-image: url('https://c4.wallpaperflare.com/wallpaper/849/660/940/nissan-skyline-nissan-skyline-r32-nissan-gt-r-r32-wallpaper-preview.jpg');/*встовляет на задний фон фон*/
+    background-repeat: no-repeat;/* делайет так что бы задний фон не повторялся*/
+    background-size: cover;/*делает задний фон на весь экран*/
+}
+
+.container {
+         padding: 20px; 
+        /* width: 1200px; */
+        display: flex;
+        flex-direction: column; 
+        justify-content: center; 
+        align-items: center; 
+}
+.title {
+    font-size: 3rem;/* делает размер фона 48 пикселей*/
+    font-weight: 900; /*делает ширину текста */
+    color: #000000; /*делает цвет шрифта*/
+    text-shadow: 4px 4px 4px rgb(59, 59, 59);/*делает тень и цвет для текста*/
+
+}
+
+.completed {
+    text-decoration: line-through;
+    color: rgb(255, 255, 255);
+}
+
+
+.todoBox {
+    margin: 20px;
+    width: 900px;
+    padding: 15px;
+    background-color: rgba(59, 59, 59, 0.403);
+    border-radius: 15px;
+}
+
+.inputBox {
+    display: grid;
+    grid-template-columns: 0.5fr 0.5fr 0.2fr;
+    gap: 0.5em;
+}
+
+.inputBox input {
+    padding: 5px;
+    border-radius: 15px;
+}
+
+.addBtn, .deleteBtn{
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    padding: 0.5rem;
+    font-size: 18px;
+    font-weight: 700;
+    border-radius: 15px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: all 1s;
+}
+
+.addBtn:hover, .deleteBtn:hover{
+    background-color: rgb(255, 255, 255);
+    color: rgb(1, 0, 0);
+    
+}
+
+
+.todoList li {
+    display: grid; 
+    grid-template-columns: 1fr 1fr 0.1fr 0.3fr; 
+    gap: 5rem; 
+    margin: 10px;
+    font-size: 20px;
+}
